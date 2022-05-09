@@ -1,0 +1,25 @@
+
+<div class="mask d-flex align-items-center h-100 gradient-custom-3">
+    <div class="container h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-12 col-md-9 col-lg-7 col-xl-6 mt-5">
+          <div class="card" style="border-radius: 15px;">
+            <div class="card-body p-5">
+                 <h3>Login</h3>
+                    <div class="form-group">
+                        <label for="username">Email:</label><br>
+                        <input type="email" [(ngModel)]="email" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password:</label><br>
+                        <input type="text" [(ngModel)]="password" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" name="submit" class="btn btn-primary" [disabled]="!email || !password" (click)="OnSubmit()" value="Login">
+                    </div>       
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
